@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>阳光智慧社区</title>
+		<link rel="stylesheet" href="css/layui.css">
+		<link rel="stylesheet" href="css/main1.css" media="all">
+		<link rel="stylesheet" href="./css/font.css">
+	</head>
+
+	<body class="layui-layout-body">
+		<div class="layui-layout layui-layout-admin">
+			<div class="layui-header">
+				<div class="layui-logo">阳光智慧社区</div>
+				<!-- 头部区域（可配合layui已有的水平导航） -->
+
+				<ul class="layui-nav layui-layout-right">
+					<li class="layui-nav-item">
+						<a href="javascript:;">
+							<img src="images/1.gif" class="layui-nav-img"> 管理员
+						</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="">基本资料</a>
+							</dd>
+							<dd>
+								<a href="">安全设置</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item">
+						<a href="login.jsp">退出登录</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="layui-side layui-bg-black">
+				<div class="layui-side-scroll">
+					<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+					<ul class="layui-nav layui-nav-tree" lay-filter="test">
+						<li class="layui-nav-item layui-this"> <a class="javascript:;" href="javascript:;" _href="welcome.html"> <i class="fa fa-university" lay-tips="首页"></i><cite>首页</cite> </a>
+
+						<li class="layui-nav-item">
+						    <a href="javascript:;">
+							    <i class="iconfont icon-dashaxiaoqudizhi01" style="top: 3px;"></i>
+							    <cite>小区管理</cite>
+						    </a>
+							<dl class="layui-nav-child" align="center">
+								<dd>
+									<a href="page/community/community.html" target="right">小区列表</a>
+								</dd>
+							</dl>
+						</li>
+
+
+						<li class="layui-nav-item">
+							<a href="javascript:;">
+							    <i class="layui-icon iconfont icon-lvhuaxiaoqu" style="top: 1px;font-size: 15px;"></i><cite>房产管理</cite>
+							</a>
+							<dl class="layui-nav-child"  align="center">
+								<dd>
+									<a href="page/house/house.html" target="right">房产管理</a>
+								</dd>
+								<dd>
+									<a href="page/buildings/buildings.html" target="right">楼栋管理</a>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="layui-nav-item">
+							<a href="javascript:;">
+								<i class="layui-icon iconfont icon-yezhuxian" style="top: 3px;"></i><cite>业主信息管理</cite>
+							</a>
+							<dl class="layui-nav-child"  align="center">
+								<dd>
+									<a href="page/personnel/personnel.html" target="right">人员管理</a>
+								</dd>
+								<dd>
+									<a href="page/car/car.html" target="right">车辆管理</a>
+								</dd>
+								<dd>
+									<a href="page/pet/pet.html" target="right">宠物管理</a>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="layui-nav-item">
+							<a href="javascript:;">
+								<i class="fa fa-taxi" style="top: 3px;"></i><cite>停车位管理</cite>
+							</a>
+							<dl class="layui-nav-child"  align="center">
+								<dd>
+									<a href="page/parking/parking.html" target="right">车位管理</a>
+								</dd>
+<!--								<dd>-->
+<!--									<a href="page/parkingUse/parkingUse.html" target="right">车位使用管理</a>-->
+<!--								</dd>-->
+							</dl>
+						</li>
+						<li class="layui-nav-item layui-this"> <a class="javascript:;" href="javascript:;" _href="wait	.html"> <i class="fa fa-university" lay-tips="后续"></i><cite>后续功能待开发！！！</cite> </a>
+
+						<li class="layui-nav-item">
+							<a href="javascript:;">
+								<i class="fa fa-university" lay-tips="声明"></i>
+								<a href="wait.html">
+									后续功能待开发！！！
+								</a>
+
+							</a>
+
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+
+			<div class="layui-body" style="z-index: 0;">
+				<!-- 内容主体区域 -->
+				<div style="padding: 15px;">
+					<iframe src="welcome.html" name="right" frameborder="0" width="100%" height="1200"></iframe>
+
+				</div>
+			</div>
+
+			<div class="layui-footer">
+				<!-- 底部固定区域 -->
+				底部固定区域
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="myplugs/js/plugs.js">
+		</script>
+		<script src="js/layui.js"></script>
+		<script>
+			//JavaScript代码区域
+			layui.use('element', function() {
+				var element = layui.element;
+
+			});
+		</script>
+	</body>
+
+</html>
